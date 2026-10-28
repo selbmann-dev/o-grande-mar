@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Grande Mar — Abundância</title>
+    <link rel="stylesheet" href="oceano.css">
+    <style>
+        /* Estilos profissionais para o botão de copiar */
+        .btn-copiar {
+            background-color: #e5c158;
+            color: #111111;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-copiar:hover {
+            background-color: #d4b047;
+            transform: scale(1.02);
+        }
+
+        .btn-copiar:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-segundo" style="text-align: center; margin-top: 100px; padding: 0 20px;">
+        
+        <!-- POEMA DE PROSPERIDADE INTEGRAL -->
+        <p style="font-size: 1.25rem; line-height: 2; color: #ffffff; letter-spacing: 0.5px; font-style: normal; margin-bottom: 50px;">
+            A moeda do cosmos circula em duas vertentes:<br>
+            A riqueza da mente e a matéria nas mãos dos viventes.<br>
+            O ouro que brilha sustenta a estrutura do chão,<br>
+            Enquanto o saber infinito expande a percepção.<br><br>
+            Que a prosperidade flua abundante em seu caminhar,<br>
+            Garantindo a matéria para a mente poder criar.<br>
+            Pois o verdadeiro fluxo da divina simetria<br>
+            Une o intelecto ao valor que o mundo multiplica.
+        </p>
+
+        <!-- BLOCO DO PIX PROFISSIONAL -->
+        <div style="margin-bottom: 40px;">
+            <p id="chave-pix" style="font-size: 1.4rem; font-weight: bold; color: #e5c158; letter-spacing: 1px; word-break: break-all; margin-bottom: 5px;">
+                selbmannglaucio@gmail.com
+            </p>
+            <!-- Botão de Copiar -->
+            <button class="btn-copiar" onclick="copiarPix()">
+                <span>Copiar Chave Pix</span>
+            </button>
+        </div>
+
+        <!-- IMAGEM DO PIX PADRONIZADA E RESPONSIVA -->
+        <div style="max-width: 350px; margin: 0 auto 60px auto;">
+            <img src="pix.png" alt="QR Code Pix" style="width: 100%; max-width: 100%; height: auto; display: block; border-radius: 8px;">
+        </div>
+
+    </div>
+
+    <!-- SCRIPT PARA A FUNÇÃO DE COPIAR -->
+    <script>
+        function copiarPix() {
+            // Seleciona o texto da chave
+            const textoChave = document.getElementById("chave-pix").innerText.trim();
+            
+            // Copia para a área de transferência
+            navigator.clipboard.writeText(textoChave).then(() => {
+                // Altera o texto do botão temporariamente para dar feedback visual
+                const botao = document.querySelector(".btn-copiar span");
+                const textoOriginal = botao.innerText;
+                
+                botao.innerText = "¡Copiado!";
+                
+                setTimeout(() => {
+                    botao.innerText = textoOriginal;
+                }, 2000);
+            }).catch(err => {
+                console.error("Erro ao copiar: ", err);
+            });
+        }
+    </script>
+
+</body>
+</html>

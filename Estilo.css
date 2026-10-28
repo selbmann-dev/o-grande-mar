@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #021329 0%, #00050d 100%);
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(2, 19, 41, 0.6);
+    border: 1px solid #d4af37; /* Borda Dourada */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+    text-align: center;
+}
+
+.imagem-mestre {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #d4af37; /* Moldura Dourada */
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #e6e6e6;
+    margin: 20px 0;
+    padding: 0 10px;
+    position: relative;
+}
+
+.autor {
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    display: block;
+}
+
+.divisor {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    margin: 25px auto;
+    width: 60%;
+}
+
+/* ESTILIZAÇÃO DO BOTÃO EM PADRÃO DE EXCELÊNCIA */
+.botao-portal {
+    display: inline-block;
+    background: transparent;
+    color: #d4af37; /* Amarelo/Dourado padrão */
+    border: 2px solid #d4af37;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    /* Aura sutil roxa no estado normal para criar profundidade */
+    box-shadow: 0 0 12px rgba(147, 51, 234, 0.3);
+    
+    /* Transição suave para todas as mudanças */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Efeito ao passar o mouse (Hover) - Equilíbrio entre o Amarelo e o Roxo */
+.botao-portal:hover {
+    background: #e5c158; /* Amarelo sólido profissional */
+    color: #111111; /* Texto escuro para leitura perfeita */
+    border-color: #e5c158;
+    transform: translateY(-3px); /* Eleva o botão suavemente */
+    
+    /* O Toque de Roxo Cósmico expandido ao redor do corpo amarelo */
+    box-shadow: 0 0 25px rgba(147, 51, 234, 0.95), 0 0 10px rgba(147, 51, 234, 0.4);
+}
+
+/* Efeito ao clicar (Active) */
+.botao-portal:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.6);
+}

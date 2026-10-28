@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #00050d !important;
+    color: #e2e8f0 !important;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px; /* Pequeno respiro nas extremidades da tela */
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container-segundo {
+    width: 100%;
+    background: #00050d !important;
+    border: 2px solid #d4af37 !important; /* Moldura de ouro delimitando o espaço místico */
+    border-radius: 8px;
+    padding: 25px 18px; /* Margem interna para a escrita respirar com harmonia */
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+    margin: 0 auto;
+}
+
+h1 {
+    color: #d4af37 !important;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.subtitulo {
+    color: #ffffff !important;
+    font-size: 1.1rem;
+    text-align: center;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #d4af37 !important;
+    font-size: 1.3rem;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 18px;
+    color: #e2e8f0 !important;
+}
+
+blockquote {
+    font-size: 1.2rem;
+    color: #d4af37 !important;
+    font-style: italic;
+    padding: 15px 10px;
+    margin: 25px 0;
+    border-left: 3px solid #d4af37;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.moldura-ilustracao {
+    width: 100%;
+    margin: 30px 0;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.moldura-ilustracao img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 25px 0;
+    padding-left: 15px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #cbd5e1 !important;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    color: #d4af37 !important;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.efeito-lista {
+    text-align: center;
+    font-style: italic;
+    color: #cbd5e1 !important;
+    margin-bottom: 8px;
+}
+
+.introducao {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.destaque, .destaque-viagem {
+    font-size: 1.2rem;
+    color: #ffffff !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pergunta {
+    font-style: italic;
+    color: #a0aec0 !important;
+}
+
+.conclusao-secao {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bloco-enfase {
+    background: rgba(212, 175, 55, 0.02);
+    border: 1px dashed rgba(212, 175, 55, 0.2);
+    padding: 20px 15px;
+    border-radius: 4px;
+    margin: 30px 0;
+}
+
+.bloco-enfase p {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.licao {
+    text-align: center;
+    color: #ffffff !important;
+    background: rgba(2, 19, 41, 0.4);
+    padding: 20px 15px;
+    border-radius: 4px;
+    margin-top: 30px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.linha-quantum {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    width: 85%;
+    margin: 30px auto;
+}
+
+.divisor-final {
+    height: 1px;
+    background: rgba(212, 175, 55, 0.2);
+    margin: 40px 0 25px 0;
+}
+
+.navegacao-portal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* BOTÃO PRINCIPAL (AMARELO CORPORATIVO COM AURA ROXA NO HOVER) */
+.botao-proximo {
+    display: block;
+    width: 100%;
+    color: #00050d !important;
+    background: #d4af37 !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(147, 51, 234, 0.25);
+    
+    /* Upgrade de transição suave e refinada */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.botao-proximo:hover {
+    background: #e5c158 !important; /* Ilumina para o amarelo mais aberto */
+    transform: translateY(-3px);
+    
+    /* Expansão da Aura Roxa Cósmica ao redor da estrutura amarela */
+    box-shadow: 0 0 25px rgba(147, 51, 234, 0.95), 0 0 10px rgba(147, 51, 234, 0.4);
+}
+
+/* BOTÃO SECUNDÁRIO (LINK DESPERTAR ESTILIZADO EM PADRÃO DE EXCELÊNCIA) */
+.link-despertar {
+    display: inline-block;
+    background: transparent !important;
+    color: #d4af37 !important;
+    border: 1px double #d4af37 !important;
+    padding: 14px 24px;
+    font-size: 1.05rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 450px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(147, 51, 234, 0.2);
+    
+    /* Sincronização do tempo de animação */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.link-despertar:hover {
+    background: #e5c158 !important;
+    color: #111111 !important; /* Dá nitidez e leitura profissional sobre o fundo claro */
+    border-color: #e5c158 !important;
+    transform: translateY(-3px);
+    
+    /* Aura Violeta Neon idêntica para manter a unidade estética */
+    box-shadow: 0 0 25px rgba(147, 51, 234, 0.95), 0 0 10px rgba(147, 51, 234, 0.4);
+}
+
+.link-despertar:active, .botao-proximo:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.6);
+}
+
+/* BOTÃO RETROCEDER COM REAÇÃO COERENTE */
+.botao-retroceder {
+    display: block;
+    width: 100%;
+    color: #a0aec0 !important;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 12px;
+    border: 1px solid rgba(160, 174, 192, 0.3);
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-retroceder:hover {
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.05);
+}
